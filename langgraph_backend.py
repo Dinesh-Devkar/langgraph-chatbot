@@ -41,7 +41,7 @@ def get_chatbot():
 
     return chatbot
 
-chatbot=get_chatbot()
-config={'configurable':{'thread_id':'1'}}
-response=chatbot.invoke({'messages':[HumanMessage(content='which one is the biggest bird in size who can fly')]},config=config)
-print(response)
+# chatbot=get_chatbot()
+# config={'configurable':{'thread_id':'1'}}
+# response=chatbot.invoke({'messages':[HumanMessage(content='which one is the biggest bird in size who can fly')]},config=config)
+# print(response)
