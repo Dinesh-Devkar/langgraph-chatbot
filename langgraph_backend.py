@@ -45,3 +45,11 @@ def get_chatbot():
 # config={'configurable':{'thread_id':'1'}}
 # response=chatbot.invoke({'messages':[HumanMessage(content='which one is the biggest bird in size who can fly')]},config=config)
 # print(response)
+
+# print("************************************************************************")
+
+# print(chatbot.get_state(config).values['messages'])
+
+# print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+
+# print(chatbot.get_state(config).values['messages'][0].content)
