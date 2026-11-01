@@ -20,6 +20,8 @@ streamlit
 
 langchain-community
 
+langgraph-checkpoint-sqlite
+
 
 # vector databases
 

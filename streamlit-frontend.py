@@ -1,5 +1,5 @@
 import streamlit as st
-from langgraph_backend import get_chatbot
+from langgraph_backend import get_chatbot, retrieve_all_threads
 from langchain_core.messages import HumanMessage
 import uuid
 
@@ -56,6 +56,7 @@ st.markdown("""
 
 def show_conversations():
     for thread in st.session_state['thread_ids']:
+        print(thread)
         thread_id, label = thread.values()
 
         if label is not None:
@@ -127,7 +128,8 @@ if 'thread_id' not in st.session_state:
 
 
 if 'thread_ids' not in st.session_state:
-     st.session_state['thread_ids']=[]
+     st.session_state['thread_ids']=retrieve_all_threads(st.session_state['chatbot'])
+     
     #  st.session_state['thread_ids'].append(str(st.session_state['thread_id']))
 
 
